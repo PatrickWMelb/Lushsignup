@@ -9,25 +9,41 @@
 
 
 .input-container {
-    background: url(img/banner.png) no-repeat;
+    background: url(img/newbanner.png) no-repeat;
 	
 	background-size: 80vw 16vw;
 	padding-left: 10px;
-    margin-left: -10px;
+    margin-left: 10vw;
 	margin-top: -1vw;
+	margin-right: 10vw;
 	padding-top: 4vw;
-  
+    padding-bottom: 2vw;
    
 }
 .input-container input{
     font-family: Helvetica, Arial, Sans-Serif;
     font-size: 6vw;
+	margin-left: 10vw;
+	margin-right: 30vw;
     border:none;
+	width: 70%;	
     background:transparent;
     
 }
-
-
+::-webkit-input-placeholder { /* Chrome */
+  color: #ffffff;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #ffffff;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #ffffff;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #ffffff;
+  opacity: 1;
+}
 
 
 </style>
@@ -48,22 +64,22 @@
   <div class = "formgroup">
   <form>
 	<p>
-	<div class = "input-container img-responsive">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+	<div class = "input-container">
+    <label for="fname"></label>
+    <input type="text" id="fname" name="firstname" placeholder="Your Name">
 	
 	</div>
 	</p>
 	<div class = "input-container">
 	
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="lname"></label>
+    <input type="text" id="lname" name="lastname" placeholder="Last Name..">
     
 	</div>
 	<div class = "input-container">
 	
-    <label for="mobile">Mobile......</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your Mobile..">
+    <label for="mobile"></label>
+    <input type="text" id="lname" name="lastname" placeholder="Mobile">
    
 	</div>
 	<div class = "input-container">
