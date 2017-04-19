@@ -26,19 +26,23 @@ body {
 	padding-top: 4vw;
     padding-bottom: 2vw;
 	opacity: 0.9;
+	
    
 }
+textarea:focus, input:focus{
+    outline: none;}
 
 
 .input-container input{
     font-family: Helvetica, Arial, Sans-Serif;
     font-size: 5vw;
-	margin-left: 10vw;
-	margin-right: 5vw;
+	margin-left: 5vw;
+	margin-right: 1vw;
     border:none;
 	width: 70%;	
     background:transparent;
 	color: #ffffff;
+	
     
 }
 ::-webkit-input-placeholder { /* Chrome */
@@ -57,6 +61,8 @@ body {
 }
 
 
+
+
 </style>
 <head>
  <meta charset="utf-8">
@@ -64,6 +70,7 @@ body {
  <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lush Sign up Page</title>
 <link href="css/bootstrap.css" rel="stylesheet">
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
 </head>
 
 
@@ -74,7 +81,12 @@ body {
   
   <img src="./img/Lush.png" class="img-responsive center-block" alt="lush">
   <div class = "formgroup">
-  <form>
+  
+  <div id="formAlert" class="alert hide">  
+          <a class="close">×</a>  
+          <strong>Warning!</strong> Make sure all fields are filled and try again.
+        </div>
+  <form id = "myform" method="post">
 	
 	<div class = "input-container">
 
@@ -103,8 +115,8 @@ body {
 	 </div>
 	
 	<p>
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+    <label for="subject"></label>
+    <textarea id="subject" name="subject" placeholder="Term and conditions" style="height:100px"></textarea>
     </p>
 	
     <input type="submit" value="Sign Up Now">
