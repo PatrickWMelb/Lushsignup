@@ -15,10 +15,9 @@
 .input-container input{
   font-family: Helvetica, Arial, Sans-Serif;
   font-size: 5vw;
-  margin-left: 10vw;
-  margin-right: 5vw;
+  margin-left: -12vw;
   border:none;
-  width: 70%;
+  width: 45vw;
   background:transparent;
   color: #ffffff;
 
@@ -36,6 +35,10 @@
 :-moz-placeholder { /* Firefox 4 - 18 */
   color: #ffffff;
   opacity: 1;
+}
+
+.alert {
+  font-size: 2vw;
 }
 
 .btn {
