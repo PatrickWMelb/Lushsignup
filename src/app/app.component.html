@@ -1,3 +1,45 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container img text-center img-responsive">
+
+  <img src="./assets/Lush.png" class="img-responsive center-block" alt="lush">
+
+  <div class="alert alert-danger" role="alert" *ngIf="_error">
+    <strong>Warning!</strong>{{_error}}
+  </div>
+
+  <form #userForm>
+
+    <div class = "input-container">
+
+      <label for="fname"></label>
+      <input type="text" id="fname" name="firstname" placeholder="Your Name" #firstname>
+
+    </div>
+
+    <div class = "input-container">
+
+      <label for="lname"></label>
+      <input type="text" id="lname" name="lastname" placeholder="Last Name" #lastname>
+
+    </div>
+    <div class = "input-container">
+
+      <label for="mobile"></label>
+      <input type="text" id="lname" name="lastname" placeholder="Mobile" #mobile>
+
+    </div>
+    <div class = "input-container">
+
+
+      <input placeholder="Date of Birth" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" #dob>
+
+    </div>
+
+    <p>
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+      </p>
+
+      <button class="btn" (click)="SignUp(firstname, lastname, mobile, dob)">Sign Up Now</button>
+
+  </form>
+</div>

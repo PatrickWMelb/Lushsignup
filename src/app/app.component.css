@@ -1,0 +1,55 @@
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+body {
+
+  background: url(/assets/bgnewlush.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+
+.input-container {
+  background: url(/assets/newbanner.png) no-repeat;
+
+  background-size: 80vw 15vw;
+  margin-left: 9vw;
+  margin-top: -1vw;
+  margin-bottom: 2vw;
+
+  padding-top: 4vw;
+  padding-bottom: 2vw;
+  opacity: 0.9;
+
+}
+
+
+.input-container input{
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-size: 5vw;
+  margin-left: 10vw;
+  margin-right: 5vw;
+  border:none;
+  width: 70%;
+  background:transparent;
+  color: #ffffff;
+
+}
+::-webkit-input-placeholder { /* Chrome */
+  color: #ffffff;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #ffffff;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #ffffff;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #ffffff;
+  opacity: 1;
+}
