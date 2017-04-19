@@ -5,6 +5,27 @@
 	color: #ffffff;
 }
 
+
+
+
+.input-container {
+    background: url(img/banner.png) no-repeat;
+	background-size:contain;
+	
+  
+   
+}
+.input-container input{
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-size: 4vw;
+    border:none;
+    background:transparent;
+    
+}
+
+
+
+
 </style>
 <head>
  <meta charset="utf-8">
@@ -17,22 +38,37 @@
 
 
 <body>
-<div class="container-fluid bg-1 text-center"> 
-  <img src="img/Lush.png" class="img-responsive center-block" alt="lush">
-  
+<div class="container-fluid bg-1 text-center img-responsive"> 
+
+  <img src="./img/Lush.png" class="img-responsive center-block" alt="lush">
+  <div class = "formgroup">
   <form>
 	<p>
+	<div class = "input-container img-responsive">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
+	
+	</div>
 	</p>
-	<p>
+	<div class = "input-container">
+	
     <label for="lname">Last Name</label>
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-    </p>
-	<p>
-    <label for="mobile">Mobile</label>
+    
+	</div>
+	<div class = "input-container">
+	
+    <label for="mobile">Mobile......</label>
     <input type="text" id="lname" name="lastname" placeholder="Your Mobile..">
-    </p>
+   
+	</div>
+	<div class = "input-container">
+	
+	 
+    <input type="date" name="bday">
+     
+	 </div>
+	
 	<p>
     <label for="subject">Subject</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
