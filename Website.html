@@ -1,33 +1,44 @@
 <html>
 <style>
-.bg-1 { 
-    background-color: #000000;
-	color: #ffffff;
+html {
+    max-width: 100%;
+    overflow-x: hidden;
 }
-
-
+body { 
+       
+        background: url('img/bgnewlush.png') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;		
+        background-size: cover;
+		
+    }
 
 
 .input-container {
     background: url(img/newbanner.png) no-repeat;
 	
-	background-size: 80vw 16vw;
-	padding-left: 10px;
-    margin-left: 10vw;
+	background-size: 80vw 15vw;	
+    margin-left: 9vw;
 	margin-top: -1vw;
-	margin-right: 10vw;
+	margin-bottom: 2vw;
+	
 	padding-top: 4vw;
     padding-bottom: 2vw;
+	opacity: 0.9;
    
 }
+
+
 .input-container input{
     font-family: Helvetica, Arial, Sans-Serif;
-    font-size: 6vw;
+    font-size: 5vw;
 	margin-left: 10vw;
-	margin-right: 30vw;
+	margin-right: 5vw;
     border:none;
 	width: 70%;	
     background:transparent;
+	color: #ffffff;
     
 }
 ::-webkit-input-placeholder { /* Chrome */
@@ -58,13 +69,15 @@
 
 
 <body>
-<div class="container-fluid bg-1 text-center img-responsive"> 
 
+<div class="container img text-center img-responsive"> 
+  
   <img src="./img/Lush.png" class="img-responsive center-block" alt="lush">
   <div class = "formgroup">
   <form>
-	<p>
+	
 	<div class = "input-container">
+
     <label for="fname"></label>
     <input type="text" id="fname" name="firstname" placeholder="Your Name">
 	
@@ -73,7 +86,7 @@
 	<div class = "input-container">
 	
     <label for="lname"></label>
-    <input type="text" id="lname" name="lastname" placeholder="Last Name..">
+    <input type="text" id="lname" name="lastname" placeholder="Last Name">
     
 	</div>
 	<div class = "input-container">
@@ -85,13 +98,13 @@
 	<div class = "input-container">
 	
 	 
-    <input type="date" name="bday">
+    <input placeholder="Date of Birth" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
      
 	 </div>
 	
 	<p>
     <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
     </p>
 	
     <input type="submit" value="Sign Up Now">
