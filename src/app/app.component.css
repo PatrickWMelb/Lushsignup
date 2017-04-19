@@ -1,20 +1,5 @@
-html {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-body {
-
-  background: url(/assets/bgnewlush.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-}
-
-
 .input-container {
-  background: url(/assets/newbanner.png) no-repeat;
+  background: url("/assets/newbanner.png") no-repeat;
 
   background-size: 80vw 15vw;
   margin-left: 9vw;

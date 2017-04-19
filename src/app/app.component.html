@@ -3,7 +3,7 @@
   <img src="./assets/Lush.png" class="img-responsive center-block" alt="lush">
 
   <div class="alert alert-danger" role="alert" *ngIf="_error">
-    <strong>Warning!</strong>{{_error}}
+    <strong>Warning!</strong> {{_error}}
   </div>
 
   <form #userForm>
@@ -11,7 +11,7 @@
     <div class = "input-container">
 
       <label for="fname"></label>
-      <input type="text" id="fname" name="firstname" placeholder="Your Name" #firstname>
+      <input type="text" id="fname" name="firstname" placeholder="First Name" #firstname>
 
     </div>
 
@@ -37,9 +37,9 @@
     <p>
       <label for="subject">Subject</label>
       <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
-      </p>
+    </p>
 
-      <button class="btn" (click)="SignUp(firstname, lastname, mobile, dob)">Sign Up Now</button>
+    <button class="btn" (click)="SignUp(firstname, lastname, mobile, dob)">Sign Up Now</button>
 
   </form>
 </div>
